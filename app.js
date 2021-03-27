@@ -35,4 +35,9 @@ app.use((err, req, res, next) => {
   return res.render("error.html", { err });
 });
 
+app.listen(3000, function() {
+  console.log("listening on 3000");
+});
+
+
 module.exports = app;
